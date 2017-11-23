@@ -1,3 +1,15 @@
+<div>
+	<br />
+	<p>
+		<a href="https://www.npmjs.com/package/async-dl-github-repo"><img src="https://img.shields.io/npm/v/async-dl-github-repo.svg?maxAge=3600" alt="NPM version" /></a>
+		<a href="https://www.npmjs.com/package/async-dl-github-repo"><img src="https://img.shields.io/npm/dt/async-dl-github-repo.svg?maxAge=3600" alt="NPM downloads" /></a>
+		<a href="https://david-dm.org/KingDGrizzle/async-dl-github-repo"><img src="https://img.shields.io/david/KingDGrizzle/async-dl-github-repo.svg?maxAge=3600" alt="Dependencies" /></a>
+	</p>
+	<p>
+    		<a href="https://nodei.co/npm/async-dl-github-repo/"><img src="https://nodei.co/npm/async-dl-github-repo.png?downloads=true&stars=true" alt="NPM info"></a>
+  	</p>
+</div>
+
 # async-dl-github-repo
 Asynchronously download a GitHub Repo
 

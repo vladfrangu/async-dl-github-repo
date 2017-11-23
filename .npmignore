@@ -1,0 +1,15 @@
+# Packages
+node_modules/
+yarn.lock
+
+# Log files
+logs/
+*.log
+
+# Miscellaneous
+.tmp/
+.vscode/
+
+# NPM ignore
+.gitignore
+.github/

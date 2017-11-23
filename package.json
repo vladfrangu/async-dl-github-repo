@@ -1,0 +1,31 @@
+{
+  "name": "async-dl-github-repo",
+  "version": "1.0.0",
+  "description": "Asynchronously download a GitHub repo",
+  "main": "src/index.js",
+  "typings": "./typings/index.d.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingDGrizzle/async-dl-github-repo.git"
+  },
+  "keywords": [
+    "github",
+    "download",
+    "download-github",
+    "async-download"
+  ],
+  "author": "Frangu Vlad <kingdgrizzle@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KingDGrizzle/async-dl-github-repo/issues"
+  },
+  "homepage": "https://github.com/KingDGrizzle/async-dl-github-repo#readme",
+  "dependencies": {
+    "fs-nextra": "^0.3.2",
+    "snekfetch": "^3.5.8",
+    "yauzl": "^2.9.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

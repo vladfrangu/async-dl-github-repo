@@ -19,7 +19,7 @@ This package has size in mind, while also being adapted to the latest Node.js ve
 It is fully asyncronous, meaning you can download the repo, while doing other things. And, I've been inspired to make it because of `download-github-repo`
 
 But heres a small list of what differs between async-dl-github-repo and download-github-repo:
-- Size: `async-dl-github-repo` and its node\_modules folder takes up around 340kb, while `download-github-repo` and its node_modules takes up 5.56MB
+- Size: `async-dl-github-repo` and its node\_modules folder takes up around \~356KB, while `download-github-repo` and its node_modules takes up \~5.56MB
 - Dependency Count: `async-dl-github-repo` has in total 6 dependencies (7, counting itself), while `download-github-repo` has 96! (including itself)
 
 If dependency count, size, or asyncronous is what you need more, use this. If not, feel free to use `download-github-repo`
@@ -35,7 +35,7 @@ npm i async-dl-github-repo
 
 ## Usage and Examples
 
-This module has one function.
+This module has one function, that is exported by default.
 
 ### download(repo, destination, downloadOnly = false)
 

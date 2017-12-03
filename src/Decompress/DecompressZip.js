@@ -1,8 +1,4 @@
-/**
- * https://github.com/kevva/decompress-unzip
- */
-const fileType = require("../Utils/FileType");
-const getStream = require("../GetStream/GetStream");
+const { GetStream, isZIP } = require("../Utils");
 const yauzl = require("yauzl");
 const { promisify } = require("util");
 
@@ -28,7 +24,7 @@ const extractEntry = (entry, zip) => {
 	if (file.mode === 0) file.mode = 420;
 
 	return promisify(zip.openReadStream.bind(zip))(entry)
-		.then(getStream)
+		.then(GetStream)
 		.then(buf => {
 			file.data = buf;
 			if (file.type === "symlink") file.linkname = buf.toString();
@@ -56,9 +52,8 @@ const extractFile = zip => new Promise((resolve, reject) => {
 	zip.on("error", reject).on("end", () => resolve(files));
 });
 
-module.exports = () => buf => {
+module.exports = async buf => {
 	if (!Buffer.isBuffer(buf)) return Promise.reject(new TypeError(`Expected a Buffer, got ${typeof buf}`));
-	if (!fileType(buf) || fileType(buf).ext !== "zip") return Promise.resolve([]);
-
+	if ((await isZIP(buf)).ext !== "zip") return Promise.resolve([]);
 	return promisify(yauzl.fromBuffer)(buf, { lazyEntries: true }).then(extractFile);
 };

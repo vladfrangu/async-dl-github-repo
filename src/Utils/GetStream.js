@@ -10,7 +10,6 @@ const BufferStream = () => {
 		len += chunk.length;
 	});
 	stream.getBufferedValue = () => Buffer.concat(ret, len);
-	stream.getBufferedLength = () => len;
 	return stream;
 };
 

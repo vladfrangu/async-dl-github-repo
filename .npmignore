@@ -13,3 +13,5 @@ logs/
 # NPM ignore
 .gitignore
 .github/
+
+README.md

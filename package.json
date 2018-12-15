@@ -6,7 +6,7 @@
   "typings": "./typings/index.d.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KingDGrizzle/async-dl-github-repo.git"
+    "url": "git+https://github.com/vladfrangu/async-dl-github-repo.git"
   },
   "keywords": [
     "github",
@@ -14,12 +14,12 @@
     "download-github",
     "async-download"
   ],
-  "author": "Frangu Vlad <kingdgrizzle@gmail.com>",
+  "author": "Vlad Frangu <kingdgrizzle@gmail.com>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/KingDGrizzle/async-dl-github-repo/issues"
+    "url": "https://github.com/vladfrangu/async-dl-github-repo/issues"
   },
-  "homepage": "https://github.com/KingDGrizzle/async-dl-github-repo#readme",
+  "homepage": "https://github.com/vladfrangu/async-dl-github-repo#readme",
   "dependencies": {
     "fs-nextra": "^0.3.2",
     "snekfetch": "^3.5.8",
